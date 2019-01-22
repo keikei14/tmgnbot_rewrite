@@ -50,5 +50,19 @@ class MemeCaster:
         embed.add_field(name="\"Bya\"", value="-CloudiamondHD 2017", inline=False)
         await ctx.send(embed=embed)
 
+    @commands.command()
+    @commands.guild_only()
+    async def coock(self, ctx):
+        embed = discord.Embed(title="***MemeCaster!***", color=0xf915d1)
+        embed.add_field(name="\"How to \'coock\' noodles\"", value="-Fearix 2017", inline=False)
+        await ctx.send(embed=embed)
+
+    @commands.command()
+    @commands.guild_only()
+    async def gadi(self, ctx):
+        embed = discord.Embed(title="***MemeCaster!***", color=0xf915d1)
+        embed.add_field(name="\"Deez Nuts \'gadi\' \"", value="-Fearix 2017", inline=False)
+        await ctx.send(embed=embed)
+
 def setup(bot):
     bot.add_cog(MemeCaster(bot))
