@@ -37,7 +37,7 @@ async def on_ready():
 
 @bot.command()
 async def hi(ctx):
-    await ctx.send("Hi {0.author}!".format(ctx))
+    await ctx.send("Hi {0.author.mention}!".format(ctx))
 
 @bot.command()
 async def help(ctx):
