@@ -28,8 +28,5 @@ class ServerChecker:
             await ctx.send("Cannot connect to server. Maybe server offline?")
         else:
             await ctx.send("The server replied in {0} ms.".format(latency))
-
-
-
 def setup(bot):
     bot.add_cog(ServerChecker(bot))
