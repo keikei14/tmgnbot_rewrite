@@ -5,7 +5,7 @@ from discord.ext import commands
 
 start_time = time.time()
 
-class UptimeCog:
+class UptimeCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

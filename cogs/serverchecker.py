@@ -4,7 +4,7 @@ import socket
 
 server = MinecraftServer.lookup("tmgn.g-s.nu:25565")
 
-class ServerChecker:
+class ServerChecker(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
