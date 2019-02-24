@@ -1,8 +1,9 @@
 from mcstatus import MinecraftServer
 from discord.ext import commands
 import socket
+import private_stuff
 
-server = MinecraftServer.lookup("tmgn.g-s.nu:25565")
+server = MinecraftServer.lookup(private_stuff.server)
 
 class ServerChecker(commands.Cog):
     def __init__(self, bot):
