@@ -64,5 +64,18 @@ class MemeCaster(commands.Cog):
         embed.add_field(name="\"Deez Nuts \'gadi\' \"", value="-Fearix 2017", inline=False)
         await ctx.send(embed=embed)
 
+    @commands.command(name="pev")
+    @commands.guild_only()
+    @commands.has_role("Administrator")
+    async def everyone(self, ctx):
+        await ctx.message.delete()
+        await asyncio.sleep(0.1)
+        await ctx.send("@everyone")
+
+    @everyone.error
+    async def everyone_error(self, ctx, error):
+        if isinstance(error, commands.CheckFailure):
+            await ctx.send("You don't have the \"Admin\" role!")
+
 def setup(bot):
     bot.add_cog(MemeCaster(bot))
