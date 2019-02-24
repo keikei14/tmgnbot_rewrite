@@ -42,6 +42,6 @@ async def hi(ctx):
 @bot.command()
 async def help(ctx):
     await ctx.send("Available commands:\n{0}help\n{0}uptime\n{0}neat\n{0}sade\n{0}ripa\n{0}hi\n{0}bya\n"
-                   "{0}coock\n{0}gadi".format(prefix))
+                   "{0}coock\n{0}gadi\n{0}pev\n{0}status\n{0}ping".format(prefix))
 
 bot.run(private_stuff.token, bot=True, reconnect=True)
